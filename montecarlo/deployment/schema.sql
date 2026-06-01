@@ -99,6 +99,6 @@ CREATE INDEX IF NOT EXISTS idx_risk_symbol ON risk_metrics (symbol);
 
 -- Create read-only user
 CREATE USER ravinala_read_only WITH PASSWORD 'read_only_password_2026';
-GRANT CONNECT ON DATABASE market_data TO ravinala_read_only;
+GRANT CONNECT ON DATABASE ravinala TO ravinala_read_only;
 GRANT USAGE ON SCHEMA public TO ravinala_read_only;
 GRANT SELECT ON ALL TABLES IN SCHEMA public TO ravinala_read_only;
