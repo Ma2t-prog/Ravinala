@@ -11,6 +11,8 @@ Ravinala est une plateforme de finance de marché que j'ai développée comme pr
 
 Pour lancer : `docker compose up -d` puis http://localhost:5173
 
+![Intelligence Center de Ravinala](docs/screenshots/intelligence-center.png)
+
 ## Pourquoi ce projet
 
 Je suis en école de commerce et la finance de marché m'intéresse depuis un moment. Le problème quand on vient d'une formation business, c'est qu'on apprend les concepts (Black-Scholes, la VaR, Markowitz...) sans jamais vraiment mettre les mains dedans.
