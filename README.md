@@ -297,7 +297,7 @@ Proprietary - All rights reserved.
 ## Contact
 
 Developed by Matthias  
-For inquiries: matthias@ravinala.dev
+For inquiries: tsivahinymatthiaspro@gmail.com
 
 ---
 
