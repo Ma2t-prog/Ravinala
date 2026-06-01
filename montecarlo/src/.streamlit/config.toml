@@ -1,0 +1,3 @@
+[server]
+runOnSave = false        # Ne pas rerunner l'app quand un fichier .py est sauvegardé
+fileWatcherType = "none" # Désactiver le watcher de fichiers complètement

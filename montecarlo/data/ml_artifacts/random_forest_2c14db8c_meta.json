@@ -1,0 +1,18 @@
+{
+  "run_id": "2c14db8c",
+  "timestamp": "2026-03-24T01:19:57.728367",
+  "params": {
+    "model_type": "random_forest",
+    "train_samples": 100,
+    "val_samples": null,
+    "training_time_sec": 0.116016
+  },
+  "metrics": {
+    "mse": 0.9606598153060623,
+    "mae": 0.7753459532758328,
+    "r2": -0.004435299252408154,
+    "directional_accuracy": 0.42,
+    "ic": 0.0
+  },
+  "artifact_path": "C:\\Users\\Matthias\\Project\\montecarlo\\data\\ml_artifacts\\random_forest_2c14db8c.joblib"
+}

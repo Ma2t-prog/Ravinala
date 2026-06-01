@@ -1,0 +1,18 @@
+{
+  "run_id": "e05f0024",
+  "timestamp": "2026-03-24T11:00:27.529463",
+  "params": {
+    "model_type": "random_forest",
+    "train_samples": 20,
+    "val_samples": null,
+    "training_time_sec": 0.152208
+  },
+  "metrics": {
+    "mse": 0.0,
+    "mae": 0.0,
+    "r2": 0.0,
+    "directional_accuracy": 1.0,
+    "ic": 0.0
+  },
+  "artifact_path": "C:\\Users\\Matthias\\Project\\montecarlo\\data\\ml_artifacts\\random_forest_e05f0024.joblib"
+}

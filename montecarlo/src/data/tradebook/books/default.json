@@ -1,0 +1,9 @@
+{
+  "book_id": "default",
+  "name": "Default Book",
+  "description": "Main trading book",
+  "created_at": "2026-03-21T18:04:57.570029",
+  "created_by": "system",
+  "currency": "EUR",
+  "trades": []
+}

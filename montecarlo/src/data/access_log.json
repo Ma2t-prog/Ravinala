@@ -1,0 +1,275 @@
+[
+  {
+    "timestamp": "2026-03-16T12:42:18.950945",
+    "username": "system",
+    "action": "USER_CREATED",
+    "success": true,
+    "details": "Created user: admin (admin)"
+  },
+  {
+    "timestamp": "2026-03-16T15:43:18.178987",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T15:59:21.850622",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T16:20:07.598442",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T16:23:18.458063",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T16:25:11.403066",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T16:34:56.733036",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:35:34.679077",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:35:35.276614",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:35:35.456519",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:35:35.637027",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:37:48.617823",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:38:12.293801",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:38:20.565320",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:38:37.914736",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:38:38.643453",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:38:38.824663",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:38:38.984249",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:38:39.184293",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:39:55.962467",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:40:29.772423",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T16:40:29.812811",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T16:41:04.831072",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T16:55:03.969522",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T16:58:31.527465",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T17:01:31.155360",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T17:53:12.709197",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T18:07:12.313273",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:12.938339",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:13.132576",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:13.298125",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:17.000194",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:17.552531",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:17.730999",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:17.908115",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:18.079197",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:18.268869",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:18.450028",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  },
+  {
+    "timestamp": "2026-03-16T18:07:18.630422",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  }
+]

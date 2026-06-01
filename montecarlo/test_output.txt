@@ -1,0 +1,33 @@
+python-dotenv not installed. Skipping .env file loading.
+Optional API not configured: fred. FRED (macro data - can fall back to yfinance treasuries) v
+Optional API not configured: alpha_vantage. Alpha Vantage (forex intraday - can fall back to daily) v
+Optional API not configured: news. News API (headlines - sentiment module will skip) v
+Optional API not configured: reddit. Reddit API (sentiment - will fall back to VADER on headlines) v
+PyWavelets not installed. Wavelet analysis will be limited.
+
+======================================================================
+  TEST 1: Module Imports
+======================================================================
+
+Traceback (most recent call last):
+  File "C:\Users\Matthias\Project\montecarlo\test_task_7.py", line 51, in <module>
+    print_test(test_num, "backtesting_engine imports")
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matthias\Project\montecarlo\test_task_7.py", line 24, in print_test
+    print(f"  \u2713 TEST {num}: {name}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matthias\Project\montecarlo\test_task_7.py", line 54, in <module>
+    print(f"  \u2717 backtesting_engine import failed: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2717' in position 2: character maps to <undefined>

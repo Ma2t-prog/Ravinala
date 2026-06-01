@@ -1,0 +1,16 @@
+{
+  "admin": {
+    "username": "admin",
+    "password_hash": "6247bdba00785b22f37bfdf4c5ef8f261403a5f1f4d6c800f0d383196df4cc44",
+    "salt": "ca64c543e3e282b2ba985e3d9b7ad979e2027dc585c002c0bf819acf805b131b",
+    "display_name": "Administrator",
+    "role": "admin",
+    "created_at": "2026-03-17T12:57:09.527158",
+    "expires_at": null,
+    "is_active": true,
+    "max_sessions": 5,
+    "last_login": null,
+    "login_count": 0,
+    "allowed_tabs": null
+  }
+}

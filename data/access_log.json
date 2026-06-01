@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": "2026-03-17T12:57:09.615754",
+    "username": "system",
+    "action": "USER_CREATED",
+    "success": true,
+    "details": "Created user: admin (admin)"
+  }
+]

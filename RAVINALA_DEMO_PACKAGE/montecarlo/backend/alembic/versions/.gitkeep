@@ -1,0 +1,3 @@
+# Alembic versions directory
+# Generated migration scripts will appear here.
+# Run: alembic revision --autogenerate -m "description"

@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2026-03-16T12:27:19.038924",
+    "username": "system",
+    "action": "USER_CREATED",
+    "success": true,
+    "details": "Created user: admin (admin)"
+  },
+  {
+    "timestamp": "2026-03-16T12:27:36.763638",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Wrong password"
+  },
+  {
+    "timestamp": "2026-03-16T12:27:44.181790",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Wrong password"
+  },
+  {
+    "timestamp": "2026-03-16T12:27:45.069746",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Wrong password"
+  },
+  {
+    "timestamp": "2026-03-16T12:28:20.620734",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T12:40:54.706046",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T13:03:41.508459",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T13:50:56.511324",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T15:29:58.441197",
+    "username": "admin",
+    "action": "LOGIN_SUCCESS",
+    "success": true,
+    "details": ""
+  },
+  {
+    "timestamp": "2026-03-16T15:42:20.448597",
+    "username": "admin",
+    "action": "LOGIN_FAILED",
+    "success": false,
+    "details": "Too many sessions"
+  }
+]

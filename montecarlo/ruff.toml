@@ -1,0 +1,28 @@
+# Ruff linter configuration for Ravinala
+target-version = "py310"
+line-length = 120
+
+[lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "S",    # flake8-bandit (security)
+    "UP",   # pyupgrade
+]
+ignore = [
+    "E501",   # line too long (handled by formatter)
+    "S101",   # assert usage (ok in tests)
+    "S311",   # random usage (ok for simulations)
+    "B905",   # zip strict (not needed for pandas)
+]
+
+[lint.per-file-ignores]
+"tests/*" = ["S101", "S106"]
+"src/pages/*" = ["E402"]  # Streamlit pages import order
+
+[format]
+quote-style = "double"
+indent-style = "space"

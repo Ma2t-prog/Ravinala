@@ -1,0 +1,18 @@
+{
+  "run_id": "f7291628",
+  "timestamp": "2026-03-24T10:58:32.760109",
+  "params": {
+    "model_type": "random_forest",
+    "train_samples": 100,
+    "val_samples": null,
+    "training_time_sec": 0.164339
+  },
+  "metrics": {
+    "mse": 0.7905757177880743,
+    "mae": 0.7126231280909492,
+    "r2": -0.001301232332429958,
+    "directional_accuracy": 0.51,
+    "ic": 0.0
+  },
+  "artifact_path": "C:\\Users\\Matthias\\Project\\montecarlo\\data\\ml_artifacts\\random_forest_f7291628.joblib"
+}

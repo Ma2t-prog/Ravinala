@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local package caches
+.venv/
+.venv-*/
+.uv-cache/
+.uv-python/
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Local IDE and agent state
+.vscode/
+.claude/
+
+# Runtime data and generated artifacts
+tmp/
+*.log
+*.sqlite
+*.db-shm
+*.db-wal
+*.parquet
+*.joblib
+*.xlsx
+*.pdf
+
+# Local secrets
+.env
+.env.*
+!.env.example
+

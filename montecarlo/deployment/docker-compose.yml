@@ -1,0 +1,51 @@
+version: '3.9'
+
+services:
+  # PostgreSQL 15 + TimescaleDB
+  postgres:
+    image: timescale/timescaledb:latest-pg15
+    container_name: ravinala_postgres
+    environment:
+      POSTGRES_USER: ${DB_USER:-ravinala}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD must be set in .env}
+      POSTGRES_DB: ${DB_NAME:-market_data}
+      POSTGRES_INITDB_ARGS: "-c max_wal_size=2GB"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ravinala"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - ravinala_network
+
+  # Redis 7
+  redis:
+    image: redis:7-alpine
+    container_name: ravinala_redis
+    command: redis-server --appendonly yes --maxmemory 2gb --maxmemory-policy volatile-ttl
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - ravinala_network
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  ravinala_network:
+    driver: bridge

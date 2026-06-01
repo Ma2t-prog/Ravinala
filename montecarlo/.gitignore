@@ -1,0 +1,55 @@
+# Environment & Secrets
+.env
+.env.*
+*.key
+*.pem
+*.crt
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+.venv-backend/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Data (keep structure, ignore content)
+data/tradebook/books/*.json
+data/tradebook/snapshots/*.json
+data/tradebook/archive/*.json
+data/cache/
+
+# Test / Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Distribution
+*.whl
+*.tar.gz

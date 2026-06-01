@@ -1,0 +1,18 @@
+{
+  "run_id": "543007d9",
+  "timestamp": "2026-03-24T11:03:58.941860",
+  "params": {
+    "model_type": "random_forest",
+    "train_samples": 100,
+    "val_samples": null,
+    "training_time_sec": 0.158513
+  },
+  "metrics": {
+    "mse": 0.9640150902054765,
+    "mae": 0.7776946193212366,
+    "r2": -0.05169797700595491,
+    "directional_accuracy": 0.59,
+    "ic": 0.0
+  },
+  "artifact_path": "C:\\Users\\Matthias\\Project\\montecarlo\\data\\ml_artifacts\\random_forest_543007d9.joblib"
+}

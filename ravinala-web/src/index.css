@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap");
+@import "tailwindcss";
+
+/* ─── Quantum Dark Design Tokens ──────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-base: #0a0e1a;
+  --bg-surface: #131823;
+  --bg-elevated: #1a2332;
+  --bg-hover: #1f2a3a;
+  --bg-active: #2a3647;
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --text-disabled: #64748b;
+
+  /* Accents */
+  --accent-primary: #00d9ff;
+  --accent-secondary: #7c3aed;
+  --accent-error: #ef4444;
+  --accent-success: #10b981;
+  --accent-warning: #f59e0b;
+
+  /* Borders */
+  --border-default: rgba(51, 65, 85, 0.3);
+  --border-hover: rgba(0, 217, 255, 0.2);
+
+  /* Asset class colors */
+  --color-equities: #3b82f6;
+  --color-fixed-income: #10b981;
+  --color-derivatives: #f59e0b;
+  --color-commodities: #ef4444;
+  --color-crypto: #f97316;
+
+  /* Typography */
+  --font-body: "Inter", "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Orbitron", sans-serif;
+}
+
+/* ─── Base Styles ──────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  background-image:
+    radial-gradient(
+      ellipse 1200px 800px at 20% 10%,
+      rgba(0, 217, 255, 0.04),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 900px 650px at 85% 20%,
+      rgba(124, 58, 237, 0.03),
+      transparent 55%
+    );
+}
+
+#root {
+  min-height: 100svh;
+}
+
+/* ─── Custom Scrollbars ────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.6);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 217, 255, 0.3);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(51, 65, 85, 0.6) var(--bg-base);
+}
+
+/* ─── Typography Utilities ─────────────────────────────────────────────────── */
+.font-mono {
+  font-family: var(--font-mono) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-display {
+  font-family: var(--font-display) !important;
+  letter-spacing: 0.08em;
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+/* ─── Card ─────────────────────────────────────────────────────────────────── */
+.card {
+  background: linear-gradient(
+    135deg,
+    rgba(19, 24, 35, 0.6),
+    rgba(15, 18, 24, 0.6)
+  );
+  border: 1px solid rgba(51, 65, 85, 0.3);
+  border-radius: 10px;
+  padding: 24px;
+  transition: all 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.card:hover {
+  border-color: rgba(0, 217, 255, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+.card-elevated {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: border-color 0.15s ease;
+}
+
+.card-elevated:hover {
+  border-color: var(--border-hover);
+}
+
+/* ─── Badge Variants ───────────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.badge-up {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.badge-down {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.badge-neutral {
+  background-color: rgba(100, 116, 139, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(100, 116, 139, 0.25);
+}
+
+.badge-warning {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.badge-info {
+  background-color: rgba(0, 217, 255, 0.1);
+  color: #00d9ff;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+/* ─── Animations ──────────────────────────────────────────────────────────── */
+@keyframes rvn-logo-shimmer {
+  0% {
+    background-position: -300% center;
+  }
+  100% {
+    background-position: 300% center;
+  }
+}
+
+@keyframes rvn-omega-glow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 20px rgba(212, 175, 55, 0.35),
+      0 0 48px rgba(212, 175, 55, 0.1);
+  }
+  50% {
+    text-shadow:
+      0 0 32px rgba(212, 175, 55, 0.6),
+      0 0 64px rgba(212, 175, 55, 0.2);
+  }
+}
+
+@keyframes rvn-live-dot {
+  0%,
+  100% {
+    box-shadow: 0 0 6px 1px rgba(16, 185, 129, 0.7);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 2px 0 rgba(16, 185, 129, 0.2);
+    opacity: 0.5;
+  }
+}
+
+@keyframes rvn-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rvn-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rvn-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ─── Main Content Scrollbar (gold-tinted) ────────────────────────────────── */
+main::-webkit-scrollbar {
+  width: 6px;
+}
+main::-webkit-scrollbar-track {
+  background: rgba(15, 18, 24, 0.5);
+}
+main::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.35);
+  border-radius: 999px;
+}
+main::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.65);
+}
+
+/* ─── Sidebar Scrollbar (thin silver) ─────────────────────────────────────── */
+aside::-webkit-scrollbar {
+  width: 3px;
+}
+aside::-webkit-scrollbar-track {
+  background: transparent;
+}
+aside::-webkit-scrollbar-thumb {
+  background: rgba(192, 192, 192, 0.12);
+  border-radius: 999px;
+}
+aside::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 192, 192, 0.25);
+}
+
+/* ─── Watermark ───────────────────────────────────────────────────────────── */
+.watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 120px;
+  opacity: 0.004;
+  color: #64748b;
+  font-weight: 900;
+  z-index: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  user-select: none;
+}
