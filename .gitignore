@@ -38,3 +38,40 @@ tmp/
 .env.*
 !.env.example
 
+# Demo/test directories (keep clean)
+RAVINALA_DEMO_PACKAGE/
+Projet ANX/
+cUsersMatthiasProject*/
+*-demo/
+*_demo/
+
+# Temporary files and archives
+*.zip
+*.tar.gz
+*.rar
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Build and dist directories
+build/
+dist/
+.next/
+out/
+
+# Database snapshots
+*.db
+*.sqlite3
+
+# MLflow artifacts (too large)
+mlruns/
+ml_artifacts/
+
+# Cache directories
+cache/
+.cache/
+
