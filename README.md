@@ -2,6 +2,13 @@
 
 Advanced AI-driven financial platform with autonomous agents for portfolio optimization, derivatives pricing, and real-time market analysis.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](montecarlo/backend/requirements.txt)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)](ravinala-web/tsconfig.json)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green.svg)](montecarlo/backend/requirements.txt)
+[![React 19](https://img.shields.io/badge/React-19-blue.svg)](ravinala-web/package.json)
+[![Docker Ready](https://img.shields.io/badge/Docker-ready-blue.svg)](montecarlo/deployment/docker-compose.yml)
+
 **TL;DR:** Clone → `docker-compose up -d` → http://localhost:5173
 
 See **[QUICKSTART.md](QUICKSTART.md)** for 2-minute setup guide.
