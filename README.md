@@ -1,6 +1,6 @@
 # Ravinala
 
-Ravinala est une plateforme de finance de marché que j'ai développée comme projet personnel : pricing de produits dérivés, optimisation de portefeuille, calcul de risque, et quelques agents IA pour automatiser des analyses. Le tout dans une interface web qui ressemble à un terminal type Bloomberg.
+Ravinala est une plateforme de finance de marché que j'ai développée comme projet personnel : pricing de produits dérivés, optimisation de portefeuille, calcul de risque, et quelques agents IA pour automatiser des analyses. Le tout dans une interface web qui ressemble à un terminal type Bloomberg/LSEG.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](montecarlo/backend/requirements.txt)
@@ -29,8 +29,6 @@ Ce développement démontre une double compétence, essentielle pour appréhende
 Maîtrise Quantitative : Capacité à modéliser et à valider des instruments financiers complexes via une implémentation logicielle fiable.
 
 Maîtrise Technique : Conception d'une infrastructure robuste (Backend, BDD, Frontend, déploiement) permettant de transformer des modèles mathématiques en outils de production scalables.
-
-C'est un projet à double lecture : la partie finance pour montrer que je comprends les modèles, la partie technique pour montrer que je sais les faire tourner.
 
 ## Lancer l'application
 
