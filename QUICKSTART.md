@@ -12,8 +12,10 @@ Want to test this project? Follow these 3 steps:
 ```bash
 git clone https://github.com/Ma2t-prog/Ravinala.git
 cd Ravinala/montecarlo/deployment
-docker-compose up -d
+docker compose up -d
 ```
+
+No configuration needed — everything (database, password, cache) is preconfigured with sensible defaults.
 
 Wait 30-60 seconds for services to start.
 
@@ -43,7 +45,7 @@ Should show "All tests passed!"
 
 ## Stop Services
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ---

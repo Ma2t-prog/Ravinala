@@ -7,8 +7,8 @@ services:
     container_name: ravinala_postgres
     environment:
       POSTGRES_USER: ${DB_USER:-ravinala}
-      POSTGRES_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD must be set in .env}
-      POSTGRES_DB: ${DB_NAME:-market_data}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-ravinala}
+      POSTGRES_DB: ${DB_NAME:-ravinala}
     ports:
       - "5432:5432"
     volumes:

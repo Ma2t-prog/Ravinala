@@ -28,14 +28,10 @@ Il faut juste Docker d'installé ([Docker Desktop](https://www.docker.com/produc
 ```bash
 git clone https://github.com/Ma2t-prog/Ravinala.git
 cd Ravinala/montecarlo/deployment
-
-# créer le fichier de config (mot de passe de la base)
-echo "DB_USER=ravinala
-DB_PASSWORD=ravinala
-DB_NAME=ravinala" > .env
-
 docker compose up -d
 ```
+
+Aucune configuration à faire : la base, le mot de passe et le cache sont préconfigurés avec des valeurs par défaut.
 
 Laissez tourner 30 à 60 secondes le temps que tout démarre, puis :
 
