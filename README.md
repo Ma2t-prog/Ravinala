@@ -15,9 +15,20 @@ Pour lancer : `docker compose up -d` puis http://localhost:5173
 
 ## Pourquoi ce projet
 
-Je suis en école de commerce et la finance de marché m'intéresse depuis un moment. Le problème quand on vient d'une formation business, c'est qu'on apprend les concepts (Black-Scholes, la VaR, Markowitz...) sans jamais vraiment mettre les mains dedans.
+Ce projet reflète ma volonté constante d'approfondir la théorie financière par une approche appliquée. Plutôt que de me limiter à l'analyse théorique, j'ai choisi de concevoir et d'implémenter mes propres outils de marché afin de maîtriser les mécanismes sous-jacents de la modélisation.
 
-J'ai donc décidé de coder les outils moi-même. Ça m'a forcé à comprendre les modèles pour de vrai — quand il faut les implémenter, on ne peut plus se contenter de réciter une formule. Et au passage j'ai appris à construire une vraie application : backend, base de données, frontend, déploiement.
+Cette plateforme se structure autour de deux axes opérationnels :
+
+Moteur de Pricing : Implémentation rigoureuse de modèles dérivés (Black-Scholes et dérivés). L'objectif est de garantir une compréhension fine des sensibilités et des hypothèses de valorisation par la pratique du code.
+
+Aide à la Gestion d'Allocation : Outil dédié à l'optimisation de portefeuille (Markowitz, VaR), conçu pour transformer des concepts théoriques en décisions d'allocation actionnables.
+
+Objectifs du projet
+Ce développement démontre une double compétence, essentielle pour appréhender les enjeux de la finance de marché moderne :
+
+Maîtrise Quantitative : Capacité à modéliser et à valider des instruments financiers complexes via une implémentation logicielle fiable.
+
+Maîtrise Technique : Conception d'une infrastructure robuste (Backend, BDD, Frontend, déploiement) permettant de transformer des modèles mathématiques en outils de production scalables.
 
 C'est un projet à double lecture : la partie finance pour montrer que je comprends les modèles, la partie technique pour montrer que je sais les faire tourner.
 
