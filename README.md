@@ -2,6 +2,10 @@
 
 Advanced AI-driven financial platform with autonomous agents for portfolio optimization, derivatives pricing, and real-time market analysis.
 
+**TL;DR:** Clone → `docker-compose up -d` → http://localhost:5173
+
+See **[QUICKSTART.md](QUICKSTART.md)** for 2-minute setup guide.
+
 ## Overview
 
 Ravinala is a production-grade financial terminal built with modern full-stack architecture. It combines machine learning, quantitative finance, and autonomous agents to deliver institutional-grade tools for portfolio management, risk analysis, and derivatives structuring.
