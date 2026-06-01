@@ -40,6 +40,50 @@ services:
     networks:
       - ravinala_network
 
+  # FastAPI Backend
+  backend:
+    build:
+      context: ../
+      dockerfile: deployment/Dockerfile.backend
+    container_name: ravinala_backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://ravinala:ravinala@postgres:5432/ravinala
+      REDIS_URL: redis://redis:6379/0
+      BACKEND_HOST: 0.0.0.0
+      BACKEND_PORT: 8000
+      LOG_LEVEL: INFO
+      DEBUG: "false"
+      ENVIRONMENT: production
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    networks:
+      - ravinala_network
+    restart: unless-stopped
+
+  # React Frontend
+  frontend:
+    build:
+      context: ../../ravinala-web
+      dockerfile: ../montecarlo/deployment/Dockerfile.frontend
+    container_name: ravinala_frontend
+    depends_on:
+      - backend
+    environment:
+      VITE_API_URL: http://backend:8000
+    ports:
+      - "5173:5173"
+    networks:
+      - ravinala_network
+    restart: unless-stopped
+
 volumes:
   postgres_data:
     driver: local

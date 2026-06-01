@@ -109,13 +109,43 @@ Ravinala is a production-grade financial terminal built with modern full-stack a
 
 ## Quick Start
 
-### Prerequisites
+## Quick Start
+
+### Fastest Way: Docker (Recommended)
+
+Requires: Docker and Docker Compose
+
+```bash
+# Clone the repository
+git clone https://github.com/Ma2t-prog/Ravinala.git
+cd Ravinala
+
+# Create .env file
+cp .env.example .env
+
+# Start all services (PostgreSQL, Redis, Backend, Frontend)
+cd montecarlo/deployment
+docker-compose up -d
+
+# Wait for services to initialize (30-60 seconds)
+# Access:
+# - Frontend: http://localhost:5173
+# - Backend API: http://localhost:8000
+# - API Docs: http://localhost:8000/docs
+```
+
+Stop services:
+```bash
+docker-compose down
+```
+
+### Local Installation (Advanced)
+
+Prerequisites
 - Python 3.10+
 - Node.js 18+
 - PostgreSQL 13+
 - Redis 6+
-
-### Installation
 
 Clone the repository:
 ```bash
@@ -123,50 +153,42 @@ git clone https://github.com/Ma2t-prog/Ravinala.git
 cd Ravinala
 ```
 
-Setup Python environment:
+Setup Backend:
 ```bash
+cd montecarlo/backend
+
+# Create Python virtual environment
 python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r montecarlo/backend/requirements.txt
+source .venv/bin/activate      # Unix/Mac
+# or
+.\.venv\Scripts\activate        # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up database
+# (Ensure PostgreSQL is running locally)
+alembic upgrade head
+
+# Start backend
+uvicorn app.main:app --reload --port 8000
 ```
 
-Setup Node dependencies:
+Setup Frontend (in new terminal):
 ```bash
 cd ravinala-web
+
+# Install dependencies
 npm install
-cd ..
-```
 
-### Running the Application
-
-Launch all services (Backend + Frontend):
-
-Windows:
-```bash
-.\launch.bat
-```
-
-Linux/Mac:
-```bash
-bash launch.sh
-```
-
-This will start:
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000
-- API Documentation: http://localhost:8000/docs
-- Agent Monitor: http://localhost:5173/agents/monitor
-
-### Docker Deployment
-
-```bash
-cd montecarlo/deployment
-docker-compose up -d
+# Start development server
+npm run dev
 ```
 
 Access:
 - Frontend: http://localhost:5173
 - Backend: http://localhost:8000
+- API Docs: http://localhost:8000/docs
 
 ## Project Structure
 
